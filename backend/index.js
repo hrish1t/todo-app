@@ -12,7 +12,9 @@ const port = process.env.PORT || 3000
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://todo-app-ocw4.onrender.com'
+}))
 
 mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log('Connected to MongoDB'))
