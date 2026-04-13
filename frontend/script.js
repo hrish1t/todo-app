@@ -1,4 +1,4 @@
-const BASE_URL = 'https://todo-app-backend-2l4o.onrender.com/'
+const BASE_URL = 'https://todo-app-backend-2l4o.onrender.com'
 
 function getToken() { return localStorage.getItem('token') }
 function setToken(t) { localStorage.setItem('token', t) }
